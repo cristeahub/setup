@@ -13,6 +13,7 @@ brew update
 brew install coreutils
 brew install findutils
 brew install bash
+brew install wget
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
