@@ -4,14 +4,14 @@ apps=(
     blender
     dropbox
     firefox
+    flux
     google-chrome
+    iterm2
+    mailbox
     slack
     seil
     spotify
-    iterm2
     virtualbox
-    flux
-    mailbox
     vlc
 )
 
