@@ -1,7 +1,9 @@
 brew install caskroom/cask/brew-cask
 
 apps=(
+    blender
     dropbox
+    firefox
     google-chrome
     slack
     seil
