@@ -13,6 +13,7 @@ apps=(
     spotify
     virtualbox
     vlc
+    wineskin-winery
 )
 
 echo "Installing apps"
