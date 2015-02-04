@@ -14,6 +14,7 @@ apps=(
     virtualbox
     vlc
     wineskin-winery
+    wireshark
 )
 
 echo "Installing apps"
