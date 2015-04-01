@@ -7,7 +7,6 @@ apps=(
     flux
     google-chrome
     iterm2
-    mailbox
     slack
     seil
     spotify
@@ -15,6 +14,7 @@ apps=(
     vlc
     wineskin-winery
     wireshark
+    xquartz
 )
 
 echo "Installing apps"
