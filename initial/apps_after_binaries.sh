@@ -9,6 +9,7 @@ apps=(
     iterm2
     slack
     seil
+    spectacle,
     spotify
     virtualbox
     vlc
