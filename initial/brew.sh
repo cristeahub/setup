@@ -8,13 +8,17 @@ else
     exit
 fi
 
+intial=(
+    coreutils
+    findutils
+    bash
+    wget
+    glut
+)
+
 brew update
 
-brew install coreutils
-brew install findutils
-brew install bash
-brew install wget
-brew install glut
+brew install ${initial[@]}
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
