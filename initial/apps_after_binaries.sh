@@ -2,6 +2,7 @@ brew install caskroom/cask/brew-cask
 
 apps=(
     blender
+    caffeine
     dropbox
     firefox
     flux
