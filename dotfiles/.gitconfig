@@ -1,0 +1,12 @@
+[user]
+	name = Christoffer Tønnessen
+	email = christoffer.tonnessen@gmail.com
+[color]
+	ui = true
+[push]
+	default = current
+[branch]
+    autosetuprebase = always
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
