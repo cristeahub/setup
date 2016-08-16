@@ -1,19 +1,16 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'nvie/vim-flake8'
+Plug 'nanotech/jellybeans.vim'
+Plug 'kballard/vim-swift'
+Plug 'groenewege/vim-less'
+Plug 'derekwyatt/vim-scala'
+Plug 'fatih/vim-go'
 
-Plugin 'nvie/vim-flake8'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'kballard/vim-swift'
-Plugin 'groenewege/vim-less'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'fatih/vim-go'
-
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 "Turn on line numbers:
