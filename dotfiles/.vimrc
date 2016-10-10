@@ -9,6 +9,7 @@ Plug 'kballard/vim-swift'
 Plug 'groenewege/vim-less'
 Plug 'derekwyatt/vim-scala'
 Plug 'fatih/vim-go'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 filetype plugin indent on
