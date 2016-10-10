@@ -9,6 +9,8 @@ Plug 'kballard/vim-swift'
 Plug 'groenewege/vim-less'
 Plug 'derekwyatt/vim-scala'
 Plug 'fatih/vim-go'
+Plug 'rust-lang/rust.vim'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 filetype plugin indent on
@@ -52,3 +54,17 @@ set listchars=nbsp:…,tab:▸\ ,trail:·,eol:$
 
 "Jellybeans color
 color jellybeans
+
+"syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+"syntax checkers
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_python_checkers = ['flake8']
