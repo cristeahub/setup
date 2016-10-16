@@ -9,7 +9,6 @@ apps=(
     google-chrome
     iterm2
     slack
-    seil
     spectacle,
     spotify
     virtualbox
