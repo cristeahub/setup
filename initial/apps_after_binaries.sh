@@ -8,6 +8,7 @@ apps=(
     flux
     google-chrome
     iterm2
+    karabiner-elements
     slack
     spectacle,
     spotify
