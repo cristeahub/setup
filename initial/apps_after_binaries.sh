@@ -8,8 +8,8 @@ apps=(
     flux
     google-chrome
     iterm2
+    karabiner-elements
     slack
-    seil
     spectacle,
     spotify
     virtualbox
