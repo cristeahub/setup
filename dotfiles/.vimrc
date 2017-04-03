@@ -5,12 +5,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'nvie/vim-flake8'
 Plug 'nanotech/jellybeans.vim'
-Plug 'kballard/vim-swift'
-Plug 'groenewege/vim-less'
-Plug 'derekwyatt/vim-scala'
-Plug 'fatih/vim-go'
-Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/syntastic'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 filetype plugin indent on
@@ -37,6 +33,7 @@ let &t_Co=256
 "Execute file being edited with <Shift> + e:
 map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
 syntax on
+filetype plugin indent on
 
 set tabstop=4
 set shiftwidth=4
