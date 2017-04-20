@@ -7,6 +7,8 @@ Plug 'nvie/vim-flake8'
 Plug 'nanotech/jellybeans.vim'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 filetype plugin indent on
@@ -61,6 +63,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+"vim airline
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
 
 "syntax checkers
 let g:syntastic_javascript_checkers = ['eslint']
