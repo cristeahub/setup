@@ -6,7 +6,12 @@
 [push]
 	default = current
 [branch]
-    autosetuprebase = always
+	autosetuprebase = always
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[rebase]
+	autosquash = true
+[alias]
+    changes = log -p -M --follow --stat --
+    b = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset)) %(upstream:track)'

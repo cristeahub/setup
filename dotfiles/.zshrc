@@ -45,21 +45,37 @@ ZSH_THEME="cristea"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew osx virtualenvwrapper vi-mode cabal)
+plugins=(git brew osx vi-mode cabal)
 
 # User configuration
 
+export PATH=/Library/Developer/Toolchains/swift-latest/usr/bin:"${PATH}"
+export PATH="$PATH:/Users/cristea/.local/bin"
+export PATH="$PATH:/Users/cristea/Library/Python/2.7/bin"
 export PATH="$PATH:/usr/local/sbin"
-export PATH=$HOME/Library/Haskell/bin:$PATH
+export PATH="$PATH:/Users/cristea/.local/bin/stack"
+export PATH="$PATH:/Users/cristea/Library/Python/3.6/bin"
+export PATH="$PATH:/usr/local/share/pypy3"
+export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
-export PYTHONPATH="/usr/local/lib/python:$PYTHONPATH"
 export MANPATH="/usr/local/opt/erlang/lib/erlang/man:$MANPATH"
 
 alias W='. venv/bin/activate'
+alias nin='/Users/cristea/Christoffersting/Projects/privat/nin/nin/backend/nin'
 
 export EDITOR='vim'
 
+export COCOAPODS_DISABLE_STATS=true
+
+# languages
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Android
+export ANDROID_HOME=/usr/local/share/android-sdk
+
 # export MANPATH="/usr/local/man:$MANPATH"
+fpath+=~/.zfunc
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,3 +103,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# added by travis gem
+[ -f /Users/cristea/.travis/travis.sh ] && source /Users/cristea/.travis/travis.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/cristea/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/cristea/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/cristea/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/cristea/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
